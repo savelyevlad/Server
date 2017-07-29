@@ -51,6 +51,7 @@ public class Server {
         }
     }
 
+    // Don't know if it's necessary:
     private static void close() {
         try {
             output.close();
