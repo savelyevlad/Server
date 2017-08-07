@@ -9,6 +9,7 @@ public class Server {
 
     private static ServerSocket server;
 
+    private static Socket connection;
     private static ObjectOutputStream output;
     private static ObjectInputStream input;
     private static Boolean isAlreadyConnected = false;
