@@ -18,7 +18,7 @@ public class Server {
 
         try {
 
-            server = new ServerSocket(6666, 100);
+            server = new ServerSocket(6666, 100, InetAddress.getByName("0.0.0.0"));
 
             while(true) {
                 connection = server.accept();
