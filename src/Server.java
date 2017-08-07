@@ -5,14 +5,10 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-// Okay, this message must be shown in "firstBranch"
-// UPD: "firstBranch" was deleted by me. This must be shown in "master"
-
 public class Server {
 
     private static ServerSocket server;
 
-    private static Socket connection;
     private static ObjectOutputStream output;
     private static ObjectInputStream input;
     private static Boolean isAlreadyConnected = false;
