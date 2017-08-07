@@ -2,6 +2,7 @@
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -18,7 +19,7 @@ public class Server {
 
         try {
 
-            server = new ServerSocket(6666, 100, InetAddress.getByName("0.0.0.0"));
+            server = new ServerSocket(6666, 100);
 
             while(true) {
                 connection = server.accept();
